@@ -54,7 +54,7 @@ To remove tooltips:
         	   enabled: false,
      		 },
 
-To remove on hover effect:
+To remove "on-hover" effect:
 
 		hover: {
 			 mode: null
