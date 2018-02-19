@@ -21,7 +21,7 @@ Create a canvas
 
       });
 
-In some cases you might need to send elemnt Id in the options like 
+In some cases you might need to send element Id in the options like 
 
              $("#bar-chart").ChartStackBar({
                   element: "#bar-chart",
@@ -37,7 +37,7 @@ You can hide the graph lines using display:false in x-axis and y-axis
                   display: false,
                 }],
                yAxes: [{
-                 display: false,
+                  display: false,
                 }]
       
 To hide Legends:
