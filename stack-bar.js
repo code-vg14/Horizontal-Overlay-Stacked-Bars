@@ -13,15 +13,15 @@ function ChartStackBar(prefs) {
 	
 	 this.element = $(prefs.element || prefs.elementId);	 
 	 this.dataPack1, this.dataPack2, this.dataPack3;
-      	 that = this;
+     that = this;
 	 this.initialise = function() {
 		that.dataPack1 = [parseInt(prefs.value1) || 50];
 		that.dataPack2 = [parseInt(prefs.value2) || 70]			
 		that.dataPack3 = [parseInt(prefs.target1) || 40];
 		that.dataPack4 = [parseInt(prefs.target2) || 50];
 
-         };
-         this.initialise();
+      };
+      this.initialise();
 
 	// Chart.defaults.global.elements.rectangle.backgroundColor = '#FF0000';
 
@@ -48,23 +48,23 @@ function ChartStackBar(prefs) {
 	var options= {
 		scales: {
 		xAxes: [{
-		      display: true,
-		      stacked: false,
-		      ticks: {
-			beginAtZero: true,
-			max:100
-		      },
+		       display: true,
+		       stacked: false,
+		       ticks: {
+			  beginAtZero: true,
+			  max:100
+		     	},
 		  }],
-		  yAxes: [{
-		    display: true,
-		    stacked: true,         
-		    id: "bar-x-axis1",
-		    barThickness : 30,
+		 yAxes: [{
+			display: true,
+			stacked: true,         
+			id: "bar-x-axis1",
+			barThickness : 30,
 		  },{
-		    display: false,
-		    stacked: true,
-		    id: "bar-x-axis2",
-		    barThickness : 30,
+			display: false,
+			stacked: true,
+		    	id: "bar-x-axis2",
+		    	barThickness : 30,
 		  }],
 
 		},
