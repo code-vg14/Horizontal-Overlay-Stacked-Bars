@@ -2,7 +2,8 @@
 Create Horizontal Overlay Stacked bars with annotations using chart.js.
 You can create horizontal overlay stackedbar using this code with chart.js plugin
 
-stack-bar.js file has the code to create hprizontal bars
+stack-bar.js file has the code to create horizontal bars
+
 Usage: 
 
 Create a canvas 
