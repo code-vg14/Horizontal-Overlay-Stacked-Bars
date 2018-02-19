@@ -28,82 +28,76 @@ function ChartStackBar(prefs) {
 	var ctx = this.element;
 	
 	var data = {
-	labels: ["x1"],
-	datasets: [{
-	        label: "value1",
-	        backgroundColor: '#e0924a',
-	        borderWidth: 1,
-	        data: that.dataPack1,
-	        yAxisID: "bar-x-axis1",
-	    },        
-	    {
-	        label: "value2",
-	        backgroundColor: '#67c07f',
-	        borderWidth: 1,
-	        data: that.dataPack2,
-	        yAxisID: "bar-x-axis1",			// will not work if set to 'bar-x-axis2'
-	    }
-	]
+		labels: ["x1"],
+		datasets: [{
+			label: "value1",
+			backgroundColor: '#e0924a',
+			borderWidth: 1,
+			data: that.dataPack1,
+			yAxisID: "bar-x-axis1",
+		    },        
+		    {
+			label: "value2",
+			backgroundColor: '#67c07f',
+			borderWidth: 1,
+			data: that.dataPack2,
+			yAxisID: "bar-x-axis1",			// will not work if set to 'bar-x-axis2'
+		    }
+		]
 	};
 	var options= {
-	scales: {
-	xAxes: [{
-		  display: true,
-	      stacked: false,
-	      ticks: {
-	      	beginAtZero: true,
-	    	  max:100
-	   	 	},
-	     }],
-	  yAxes: [{
-		display: true,
-	    stacked: true,         
-	    id: "bar-x-axis1",
-	    barThickness : 30,
-	  },{
-		display: false,
-	    stacked: true,
-	    id: "bar-x-axis2",
-	    barThickness : 30,
-	  }],
-	 
-	},
-	legend: {
-	    display: false
-	        },
-    tooltips: {
-        enabled: false,
-		hover:null
-     },
-	 annotation: {
-	       annotations: [{
-			 id: 'hline1',
-	         type: 'line',
-			 drawTime: 'afterDatasetsDraw',
-	         mode: 'vertical',
-	         scaleID: 'x-axis-0',
-	         value: parseInt(that.dataPack3),
-	         borderColor: '#FF7F50',
-	         borderWidth: 4,
-	         label: {				
-	           enabled: false,
-	           content: 'Test label',			  
-	         } },
-		   {
-		         id: 'hline2',
-		         type: 'line',
-		         mode: 'vertical',
-		         scaleID: 'x-axis-0',
-		         value: parseInt(that.dataPack4),
-		         borderColor: '#2E8B57',
-		         borderWidth: 4,
-		         label: {
-		            backgroundColor: "#006400",
-		            content: "Min Value",
-		            enabled: false
-		         }
-	       }]
-	     }
+		scales: {
+		xAxes: [{
+		      display: true,
+		      stacked: false,
+		      ticks: {
+			beginAtZero: true,
+			max:100
+		      },
+		  }],
+		  yAxes: [{
+		    display: true,
+		    stacked: true,         
+		    id: "bar-x-axis1",
+		    barThickness : 30,
+		  },{
+		    display: false,
+		    stacked: true,
+		    id: "bar-x-axis2",
+		    barThickness : 30,
+		  }],
+
+		},
+		annotation: {
+		       annotations: [{
+				 id: 'hline1',
+				 type: 'line',
+				 drawTime: 'afterDatasetsDraw',
+				 mode: 'vertical',
+				 scaleID: 'x-axis-0',
+				 value: parseInt(that.dataPack3),
+				 borderColor: '#FF7F50',
+				 borderWidth: 4,
+				 label: {				
+				   enabled: false,
+				   content: 'Test label',			  
+				 } 
+			   },
+			   {
+				 id: 'hline2',
+				 type: 'line',
+				 mode: 'vertical',
+				 scaleID: 'x-axis-0',
+				 value: parseInt(that.dataPack4),
+				 borderColor: '#2E8B57',
+				 borderWidth: 4,
+				 label: {
+				    backgroundColor: "#006400",
+				    content: "Min Value",
+				    enabled: false
+				 }
+		       }]
+		     }
 	};
 
 	new Chart(ctx, {
