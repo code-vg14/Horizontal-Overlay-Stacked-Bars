@@ -30,7 +30,7 @@ In some cases you might need to send elemnt Id in the options like
                   target1:25, 
                   target2:45,		
                }); 
-      
+You can use these additional properties in options       
 You can hide the graph lines using display:false in x-axis and y-axis
 
               xAxes: [{
@@ -40,6 +40,24 @@ You can hide the graph lines using display:false in x-axis and y-axis
                  display: false,
                 }]
       
-      
+To hide Legends:
+
+		legend: {
+        	   display: false
+	 	},
+		
+To remove tooltips:		
+
+		tooltips: {
+        	   enabled: false,
+     		 },
+
+To remove on hover effect:
+
+		hover: {
+			 mode: null
+		},
+
+		
     
 	   	 	
