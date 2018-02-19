@@ -1,17 +1,27 @@
+ // Return with commas in between
+$(document).ready(function() {
+    var prefs = {
+        element: ".stackbar"
+    };
+    $('.stackbar').each(function() {
+        prefs.element = $(this);
+        new ChartStackBar(prefs);
+    });
+});
+
 function ChartStackBar(prefs) {
 	
-	 this.element = $(prefs.elementId);
-	 
-	this.dataPack1, this.dataPack2, this.dataPack3;
-       that = this;
-	   this.initialise = function() {
-		   	that.dataPack1 = [parseInt(prefs.value1)];
-		   	that.dataPack2 = [parseInt(prefs.value2)]			
-		   	that.dataPack3 = [parseInt(prefs.target1)];
-			that.dataPack4 = [parseInt(prefs.target2)];
-	         
-	      };
-	      this.initialise();
+	 this.element = $(prefs.element || prefs.elementId);	 
+	 this.dataPack1, this.dataPack2, this.dataPack3;
+      	 that = this;
+	 this.initialise = function() {
+		that.dataPack1 = [parseInt(prefs.value1) || 50];
+		that.dataPack2 = [parseInt(prefs.value2) || 70]			
+		that.dataPack3 = [parseInt(prefs.target1) || 40];
+		that.dataPack4 = [parseInt(prefs.target2) || 50];
+
+         };
+         this.initialise();
 
 	// Chart.defaults.global.elements.rectangle.backgroundColor = '#FF0000';
 
@@ -20,14 +30,14 @@ function ChartStackBar(prefs) {
 	var data = {
 	labels: ["x1"],
 	datasets: [{
-	        label: "Pre",
+	        label: "value1",
 	        backgroundColor: '#e0924a',
 	        borderWidth: 1,
 	        data: that.dataPack1,
 	        yAxisID: "bar-x-axis1",
 	    },        
 	    {
-	        label: "Post",
+	        label: "value2",
 	        backgroundColor: '#67c07f',
 	        borderWidth: 1,
 	        data: that.dataPack2,
@@ -43,7 +53,7 @@ function ChartStackBar(prefs) {
 	      ticks: {
 	      	beginAtZero: true,
 	    	  max:100
-	    },
+	   	 	},
 	     }],
 	  yAxes: [{
 		display: true,
