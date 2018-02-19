@@ -14,16 +14,15 @@
 </head>
 
 <body>
-  <canvas id="bar-chart" height="10" width="150"></canvas>
+  <canvas class="stackbar" id="bar-chart" height="10" width="150"></canvas>
   
  <script>	
   $(document).ready(function() {	 
 	    	$("#bar-chart").ChartStackBar({
-					elementId: "#bar-chart",
 	    		 	value1:35,
 	    		 	value2:70,
-					target1:25, 
-					target2:45,		
+				target1:25, 
+				target2:45,		
 	    	   });
    	    	
   });
