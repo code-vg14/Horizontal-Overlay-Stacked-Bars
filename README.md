@@ -31,7 +31,8 @@ In some cases you might need to send element Id in the options like
                   target1:25, 
                   target2:45,		
                }); 
-You can use these additional properties in options       
+<bold>You can use these additional properties in options
+
 You can hide the graph lines using display:false in x-axis and y-axis
 
               xAxes: [{
