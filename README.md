@@ -14,22 +14,23 @@ Create a canvas
  
      $(document).ready(function() {	 
             $("#bar-chart").ChartStackBar({
-                  value1:35,
-                  value2:70,
-                  target1:25, 
-                  target2:45,		
+                  value1:35,  		//*bar1 value*//
+                  value2:70,		//*bar2 value*//
+                  target1:25, 		//*target/annotation line 1 *//
+                  target2:45,		//*target/annotation line 2 *//
                });
 
       });
 
+
 In some cases if graph is not rendering, try to pass element Id in the options like this
 
              $("#bar-chart").ChartStackBar({
-                  elementId: "#bar-chart",
-                  value1:35,
-                  value2:70,
-                  target1:25, 
-                  target2:45,		
+                  elementId: "#bar-chart",  	//*canvas Id*//
+                  value1:35,  			//*bar1 value*//
+                  value2:70,			//*bar2 value*//
+                  target1:25, 			//*target/annotation line 1 *//
+                  target2:45,			//*target/annotation line 2 *//	
                }); 
 You can use these additional properties in options
 
