@@ -15,10 +15,10 @@ function ChartStackBar(prefs) {
 	 this.dataPack1, this.dataPack2, this.dataPack3, this.dataPack4;
     	 that = this;
 	 this.initialise = function() {
-		that.dataPack1 = [parseInt(prefs.value1) || 50];
-		that.dataPack2 = [parseInt(prefs.value2) || 70]			
-		that.dataPack3 = [parseInt(prefs.target1) || 40];
-		that.dataPack4 = [parseInt(prefs.target2) || 50];
+		that.dataPack1 = [parseInt(prefs.value1) || 0];
+		that.dataPack2 = [parseInt(prefs.value2) || 0]			
+		that.dataPack3 = [parseInt(prefs.target1) || 0];
+		that.dataPack4 = [parseInt(prefs.target2) || 0];
 
       };
       this.initialise();
