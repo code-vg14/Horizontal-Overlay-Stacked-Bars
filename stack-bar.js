@@ -12,8 +12,8 @@ $(document).ready(function() {
 function ChartStackBar(prefs) {
 	
 	 this.element = $(prefs.element || prefs.elementId);	 
-	 this.dataPack1, this.dataPack2, this.dataPack3;
-     that = this;
+	 this.dataPack1, this.dataPack2, this.dataPack3, this.dataPack4;
+    	 that = this;
 	 this.initialise = function() {
 		that.dataPack1 = [parseInt(prefs.value1) || 50];
 		that.dataPack2 = [parseInt(prefs.value2) || 70]			
