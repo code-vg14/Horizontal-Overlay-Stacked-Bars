@@ -58,7 +58,7 @@ To remove tooltips:
 To remove "on-hover" effect:
 
 		hover: {
-			 mode: null
+		    mode: null
 		},
 
 		
