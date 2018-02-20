@@ -53,7 +53,7 @@ To remove tooltips:
 
 		tooltips: {
         	   enabled: false,
-    		},
+		},
 
 To remove "on-hover" effect:
 
