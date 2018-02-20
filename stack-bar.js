@@ -70,7 +70,7 @@ function ChartStackBar(prefs) {
 		},
 		annotation: {
 		       annotations: [{
-				 id: 'hline1',
+				 id: 'tline1',
 				 type: 'line',
 				 drawTime: 'afterDatasetsDraw',
 				 mode: 'vertical',
@@ -84,7 +84,7 @@ function ChartStackBar(prefs) {
 				 } 
 			   },
 			   {
-				 id: 'hline2',
+				 id: 'tline2',
 				 type: 'line',
 				 mode: 'vertical',
 				 scaleID: 'x-axis-0',
