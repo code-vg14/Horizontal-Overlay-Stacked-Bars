@@ -22,10 +22,10 @@ Create a canvas
 
       });
 
-In some cases you might need to send element Id in the options like 
+In some cases if graph is not rendering, try to pass element Id in the options like this
 
              $("#bar-chart").ChartStackBar({
-                  element: "#bar-chart",
+                  elementId: "#bar-chart",
                   value1:35,
                   value2:70,
                   target1:25, 
