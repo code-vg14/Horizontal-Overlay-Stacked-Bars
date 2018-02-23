@@ -1,4 +1,3 @@
- // Return with commas in between
 $(document).ready(function() {
     var prefs = {
         element: ".stackbar"
